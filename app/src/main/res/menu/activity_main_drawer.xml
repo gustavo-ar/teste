@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dizimo"
+            android:icon="@drawable/ic_pessoa_cinza_24dp"
+            android:title="Dizimo" />
+        <item
+            android:id="@+id/nav_casamento"
+            android:icon="@drawable/ic_aliancacasal"
+            android:title="Casamento" />
+        <item
+            android:id="@+id/nav_batismo"
+            android:icon="@drawable/ic_clientes_branco_24dp"
+            android:title="Batismo" />
+
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_sobre_branco_24dp"
+            android:title="Login"
+            android:enabled="true"/>
+    </group>
+</menu>

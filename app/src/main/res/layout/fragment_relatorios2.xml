@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorFormulario"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Selecione o tipo de relatório"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="47dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/calendario" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extrato Mensal"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_gastos_comunidade"
+            android:layout_width="47dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/world"/>
+
+        <TextView
+            android:id="@+id/tv_gastos_comunidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gastos por Comunidade"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_selecione"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="Selecione uma comunidade:"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:background="@color/colorCampoFormulario"/>
+</LinearLayout>

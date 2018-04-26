@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFormulario"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".activity.NovoEventoActivityAdmin">
+
+    <TextView
+        android:id="@+id/tv_adicionar_evento"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:text="Adicionar Novo Evento"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_adicionar_novo_evento"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorCampoFormulario"
+        android:ems="10"
+        android:hint="Título"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/et_descricao_novo_evento"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorCampoFormulario"
+        android:ems="10"
+        android:hint="Descrição"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tv_tipo_evento"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:text="Tipo de Evento"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sp_estado_civil"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/tv_comunidade"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:text="Comunidade"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sp_comunidade"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorWhite"/>
+
+    <EditText
+        android:id="@+id/et_inicio_evento"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorCampoFormulario"
+        android:ems="10"
+        android:hint="Início"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/et_termino_evento"
+        android:layout_width="312dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorCampoFormulario"
+        android:ems="10"
+        android:hint="Término"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="9dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Voltar"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="9dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Adicionar"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+</LinearLayout>

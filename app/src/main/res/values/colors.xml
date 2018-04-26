@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01c7d2</color>
+    <color name="colorPrimaryDark">#00b2bc</color>
+    <color name="colorAccent">#ff706a</color>
+
+    <color name="colorPrimaryCreditos">#00d39e</color>
+    <color name="colorPrimaryDarkCreditos">#00BE8B</color>
+    <color name="colorAccentCreditos">#00D39E</color>
+
+    <color name="colorFormulario">#d8dbda</color>
+    <color name="colorCampoFormulario">#FFFFFF</color>
+    <color name="colorTituloFormulario">#aa00ff</color>
+    <color name="colorSubtituloFormulario">#be7be1</color>
+
+    <color name="colorPrimaryDebitos">#cf090808</color>
+    <color name="colorPrimaryDarkDebitos">#cb121111</color>
+    <color name="colorAccentDebitos">#FFFFFF</color>
+
+    <!-- Cores despesas!-->
+    <color name="colorPrimaryDespesa">#FF706A</color>
+    <color name="colorPrimaryDarkDespesa">#E66560</color>
+    <color name="colorAccentDespesa">#FF706A</color>
+
+    <!-- Cores receitas!-->
+    <color name="colorPrimaryReceita">#00d39e</color>
+    <color name="colorPrimaryDarkReceita">#00BE8B</color>
+    <color name="colorAccentReceita">#00D39E</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGreen">#00a65a</color>
+    <color name="colorRed">#dd4b39</color>
+    <color name="colorBlue">#0073b7</color>
+
+</resources>
