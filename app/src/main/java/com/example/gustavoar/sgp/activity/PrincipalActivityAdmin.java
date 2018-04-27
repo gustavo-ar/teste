@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.gustavoar.sgp.R;
+import com.example.gustavoar.sgp.config.ConfiguracaoFirebase;
 import com.example.gustavoar.sgp.fragment.AdminFragment;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -48,6 +49,11 @@ public class PrincipalActivityAdmin extends AppCompatActivity implements Navigat
     @Override
     protected void onStart() {
         super.onStart();
+        verificarUsuarioLogado();
+    }
+
+    public void abrirTelaPrincipalAdmin() {
+        startActivity(new Intent(this, PrincipalActivityAdmin.class));
     }
 
     public void abrirTelaPrincipal() {
@@ -56,7 +62,7 @@ public class PrincipalActivityAdmin extends AppCompatActivity implements Navigat
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_principal, menu);
+        getMenuInflater().inflate(R.menu.menu_principal_admin, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -104,20 +110,24 @@ public class PrincipalActivityAdmin extends AppCompatActivity implements Navigat
 
         } else if (id == R.id.nav_banners_site) {
 
-
         } else if (id == R.id.nav_membros) {
-
 
         } else if (id == R.id.nav_pastorais) {
 
-
         } else if (id == R.id.nav_comunidades){
-
 
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void verificarUsuarioLogado(){
+        autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
+        //autenticacao.signOut();
+        if( autenticacao.getCurrentUser() != null ){
+            abrirTelaPrincipalAdmin();
+        }
     }
 
     @Override
